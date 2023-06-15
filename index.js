@@ -5,7 +5,7 @@ const fs = require("fs");
 const app = express();
 const title = fs.readFileSync('req-path/input.txt',"utf-8")
 
-app.use((req,res)=>{
+app.get('/',(req,res)=>{
     res.send("hello world!");
 })
 
